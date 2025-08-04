@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <!--para pode informar que o checkbox é uma lista o method="post" tem que ser o selecionado -->
+    <form method="get">
+        <h3>Você selecionou: Pizza de Calabresa</h3><br>
+        <!-- A ideia do checkbox é selecionar multiplos valores-->
+         <!-- porém pra transferir pro servidor é necessário falar os valores selecionados-->
+        <!--deve ser uma variavel que possui um ou mais valores, ou zero caso não evie nada-->
+        <!--temos que adicionar um name  para os itens referente aquela opção exemplo opcional-->
+        <!--porém, ao selecionar mais de uma opção, vai ter problema na hora de chegar no servidor, pois chegará somente o ultimo selecionado, pois entenderá que é a variavel  foi alterada mais de uma vez-->
+        <!--para evitar este problema adicionamos um colchete ([])na frente do name ex.: name="opcional[]" para informar que o mesmo é uma lista.-->
+        <!--também possuímos o atributo disabled que desabilita o campo como por exemplo na opção azeitona-->
+        <p>Quais adiconais você deseja?</p><br>
+        <input type="checkbox" name="opcional" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional" value="cebola"> + cebola  <br>
+        <input type="checkbox" name="opcional" value="azeitona" disabled> + azeitona <br>
+
+        <!--Exemplo de como chegará o php no servidor do opcional
+        $opcional["queijo", "cebola"]
+        -->
+
+
+        <!-- O radio button ele é um ou outro (não possui multiplos valores) pois o navegador não permitirá selecionar mais de um com o mesmo nome-->
+        <p>Borda recheada?</p><br>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="nao"> Não <br>
+
+
+        <!-- neste caso só poderá ser escolhida uma opção-->
+
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco"> Suco <br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="agua"> Água <br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum <br>
+        <br>
+        <button type="submit">Enviar pedido</button>
+    </form>
+
+</body>
+</html>

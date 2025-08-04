@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="">
+        <!-- campo onde digitamos testo normal-->
+         <label for="">text</label>
+        <input type="text"><br>
+
+        <!-- somente números e números cientificos-->
+         <!-- podemos definir o mínimo com o min=""-->
+        <!-- também podemos definir o máximo com max=""-->
+        <!-- caso queir pular numero podemos definir através do step="5" nesse caso pulará de 5 em 5-->
+        <label for="">Number:</label><input type="number" min="0" max="99" step="5"><br>
+
+        <label for="">button:</label>
+
+        <!--Existem dois tipo-->
+        <!-- tanto dentro da tag input-->
+        <input type="button" value="Enviar">
+        
+        <!--Como utilizando a tag button que o resultado será o mesmo.-->
+        <button>Enviar:</button> <br>
+
+        <!--Assim como o number é possível definir o limite dos valores-->
+        <!-- pode-se ser utilizado para controle de volume-->
+
+        <label for="">Range:</label><input type="range" min="0" max="100" value="10"><br>
+
+        <!--Disponibiliza um botão que pode ser utilizado para alterar alguma cor-->
+        <label for="">color:</label><input type="color" name="" id=""><br>
+
+        <!--no input e-mail ele possui algumas probremas com compatibilidade-->
+        <!-- ele não deixa enviar um email que não tenha @-->
+        <label for="">E-mail:</label><input type="email" name="" id=""><br>
+
+        
+
+
+        <!-- O URL funciona do mesmo jeito do e-mail precisa possuir o http/s para poder envivar-->
+        <label for="">URL:</label><input type="url"> <br>
+
+        <label for="">Date:</label><input type="date"><br>
+
+        <!--para selecionar uma semana do ano (em alguns navegadores não funciona)-->
+        <label for="">Week:</label><input type="week"> <br>
+        <!--para selecionar uma mês do ano (em alguns navegadores não funciona)-->
+        <label for="">Month:</label><input type="month"><br>
+
+        <!-- O checkbox [e muito utilizado para definir valores booleanos (verdadeiro ou falso | zero ou um.)]-->
+         <!--no checkbox é possível selecionar mais de um-->
+         <label for="">Checkbox:</label><input type="checkbox" name="" id=""> <input type="checkbox"><br>
+
+        <!-- No Radio não é possível selecionar mais de um, nele é necessário atribuit um name-->
+        <Label>Radio:</Label> <input type="radio" name="aceita" id=""><input type="radio" name="aceita" id=""> <br>
+
+        <!--Hidden é um campo que fica invisivel para o navegado e para o usuário para enviar uma mensagem "por trás dos panos"-->
+        <label for="">Hidden:</label><input type="hidden"> <br>
+
+        <!-- Um campo utilizado para enviar arquivos pode se utilizar o multiple para poder selecionar mais de um arquivo-->
+        <label for="">File:</label><input type="file"> <br>
+
+        <!-- problema de compatibilidade (geralmente só funciona no Chrome)-->
+        <label for="">Search:</label><input type="search"> <br>
+
+        
+    <label>Submit</label><input type="submit"><br>
+
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Solicitações</h1>
+    <!--<h2>Textarea</h2>-->
+
+    <form onsubmit="" method="get">
+
+        <label for="">Nome:</label><input type="text"><br>
+        <br>
+        <label for="">Cargo:</label>
+        <select name="role" >
+            <option value="">Selecione o cargo</option>
+            <option selected value="operadador">Operador</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="gerente">Gerente </option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Assunto:</label><input type="text"><br>
+        <br>
+        <!--Text area é uma parte onde é possível adicionar textos-->
+        <label for="">Mensagem:</label>
+        <!--ele gera um campo maior que os outros onde é possível expandir e inserir mais informações do que um campo de uma linha só.-->
+        <!-- na lateral inferior do lado direito é possível expandir também é possivel definir o tamanho que é o "Rows" para altura e "cols" para largura-->
+         
+        <textarea name="message" id="" rows="10" cols="30"></textarea><br>
+
+        <button onclick="alert('Parabéns!!! Sua mensagem não foi enviada com sucesso!')"> Enviar</button>
+    </form>
+    
+</body>
+</html>

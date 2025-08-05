@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <form method="get" onsubmit="">
+        <label>Nome:*</label><input type="text" name="name"><br>
+        <labe>Idade:*</labe><input type="number" name="age"><br>
+        <labe>Password:*</labe><input type="password" name="password"><br>
+
+        <!-- no HTML temos 3 tipo de botões que agem de forma semelhante só que com funcionalidade diferentes-->
+
+        <!--Só realizará alguma ação caso possua um comando JS por trás como por exemplo o onclick-->
+        <button type="button" onclick="alert('Clicou, Parabéns!!! você não ganhou nada!!')">Clicavel</button><br>
+        <br>
+
+        <!--Outro exemplo-->
+        <button type="button" onmouseover="alert('passou o mouse, Parabéns!!! você não ganhou nada!!')">Onmouseover</button><br>
+        <br>
+
+        <!--Reset que é o limpar, na hora que clicar nele limpará todos os campos no qual o mesmo está dentro.-->
+        <!---->
+        <button type="reset">Reset</button><br> 
+        <br>
+
+        <!--Submit, envia o formulário finalizando o processo de preenchimento do formulário-->
+        <!--Quando é clicado um submit acontece um evento chamado onsubmit que pode ser utilizado para validar o formulário antes de enviar-->
+        <!--o enter no formulario ele usa JS que ao clicar o "Enter" ele envia o mesmo.-->
+        <!--No HTML é possível burlar algumas coisas, porém tem que tomar cuidado no backend para que essas situações não aconteçam no servidor.-->
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

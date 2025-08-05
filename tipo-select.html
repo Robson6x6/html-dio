@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <h2>Tipos Select</h2>
+
+    <form onsubmit="" method="get">
+        <!--conhecido como select box ou combo box-->
+        <!--é uma lista já pré-definida onde podemos selecionar os padrões definidos em uma lista que pode ser utilizada para envio -->
+        <label for="">Nome:</label><input type="text"><br>
+
+        <!--para isso excluimos o campo text e incluimos a select e damos um name-->
+        <!-- também usamos a tag filha <option>-->
+            <!--possui algumas particularidades no JS coisa que será aprendida futuramente-->
+        <!--podemos utilizar o "selected" para definir qual valor seja selecionado ao carregar a página, sendo possível ser alterado por quem estiver acesando-->
+        <label for="">Cargo:</label>
+        <p>Exemplo select normal</p>
+        <select name="role" >
+            <option value="">Selecione o cargo</option>
+            <option selected value="operadador">Operador</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="gerente">Gerente </option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <!--Caso seja uma lista que possa selecionado mais de um item usamos o atributo multiple onde podem ser selecionado pressionando o Ctrl no teclado-->
+        <p>Exemplo select Multiplo</p>
+        <p>para selecionar mais de um é necessário segurar o "Ctrl" no teclado</p>
+        <select name="role" multiple>
+            <option value="">Selecione o cargo</option>
+            <option selected value="operadador">Operador</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="gerente">Gerente </option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select> <br>
+        <br>
+        <label for="">Assunto:</label><input type="text"><br>
+
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

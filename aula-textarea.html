@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com textarea</title>
+</head>
+<body>
+    <!--
+    text area:
+    é um campo onde podemos adicionar como o nome já diz textos. a diferença é que podemos inserir mais informações do que somente em uma linha.
+
+    em alguns navegadores tem a possíbilidade de redimencionar o tamanho do campo, como pode-se travar através do CSS.
+
+    No HTML é possível definir seu tamanho padrão de duas maneiras:
+
+    rows(linhas): redimenciona o tamanho padrão com o tamanho para a quantidade de linha desejada (serve para alterar altura)
+
+    cols: redimenciona o tamanho padrão em tamanho com a quantidade desejada (serve para alterar largura)
+    
+    -->
+    <form action="" onsubmit="" method="get">
+        <label for="">Nome: </label><input type="text" name="name"><br>
+        <label for="">Cargo</label>
+        <select name="role" id="">
+            <option value="">Selecione o cargo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+    </form>
+    <br>
+
+    <label for="">Assunto: </label><input type="text" name="subject"> <br>
+    <label for="">Mensagem: </label>
+    <textarea name="message" id=""></textarea><br>
+    <button type="submit">Enviar</button>
+    
+</body>
+</html>

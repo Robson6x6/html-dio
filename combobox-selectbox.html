@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário simples</title>
+</head>
+<body>
+ <!--
+ é uma lista já predefinida de alguns valores onde o usuário deve escolher de uma lista já existente. para isso não usamos a tag input e sim select definindo um name para o mesmo, dentro incluímos as opções usando a tag option, na primeira opção pode-se ser utilizado um valor nulo.
+
+ para atribuir um cargo automaticamente basta dentro da tag adicionar o atributo selected que o mesmo já irá aparecer pré-selecionado.
+
+ pode-se ser ultilizado o parametro multiple também para que no caso de listas onde será possível selecionar mais de uma opção segurando ctrl para selecionar nos clicados ou shift no clique no primeiro e no último que deseja selecionar para pegar aquela seleção completa. 
+ 
+ -->
+    <form action="" method="get" onsubmit="">
+        <label for="">Nome: </label><input type="text" name="name"><br>
+        <label for="">Cargo: </label>
+        <select name="role" id="">
+            <option value="">Selecione o cargo</option>
+            <option value="administrativo">Adminitrativo</option>
+            <option value="colaborador" selected>Colaborador</option>
+            <option value="ti">TI</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select><br>
+        <label for="">Assunto: </label><input type="text" name="subject"><br><br>
+
+        <button type="submit">Enviar</button><br>
+
+    </form>
+    
+</body>
+</html>

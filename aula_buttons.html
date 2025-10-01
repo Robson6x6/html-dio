@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário simples</title>
+</head>
+<body>
+    <!--
+    possuimos 3 tipos de botões no HTML e esse botões agem de formas semelhantes porém com funcionalidade diferentes.(porém podem ser alterados no JS e ter comportamento diferentes)
+
+    button: apenas um botão clicavel, que clicando não faz nada, só realizara alguma ação caso tenha um comando JS ex, onclick (ao clicar) onmouseover (ao passar o mouse) porém isso pode ser realizado em qualquer item HTML.
+
+    reset: ao clicar irá limpar os campos que estão dentro do form onde o mesmo se encontra.
+
+    submit: irá de fato finalizar e enviar o formulário
+
+    no formulário ao clicar em um botão do tipo submite irá gerar um evento chamado onsubmit que pode ser usado para validar o formulário antes de enviar para isso é necessário adicionar o atributo dentro da tag form.
+
+    O botão "Enter" define o botão submite, ao clicar no mesmo será enviado, por isso é importante inserir o onsubmite para caso seja clicado sem querer validar o mesmo. é importante validar o formulario no servidor também não somente no HTML.
+    
+    -->
+    <form action="" method="get" onsubmit="">
+        <label for="">Nome*: </label><input type="text" name="name"><br>
+        <label for="">Idade*: </label><input type="number" name="age"><br>
+        <label for="">Password*: </label><input type="password" name="password"><br><br>
+
+        <button type="button">clicavel</button><br>
+        <button type="reset">Resetar preencimento</button>
+        <button type="submit">Enviar</button><br>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria só na bordinha</title>
+</head>
+<body>
+    <!--
+    checkbox: a ideia é selecionar multiplos valores, geralmente não é enviado um por um o que não faz sentido caso existam centenas de opções. a ideia é que seja uma variavel que possua nenhum ou vários valores. nesse caso usarmo o name="opcional" para quando for selecionado ao ir para o servidor irem todos. para evitar conflitos é necessário usar o os colchetes mostrando que é uma lista name="opcional[]" e ao enviar uma lista tem que eviar o method via post
+
+    exemplo de como o beckend irá receber:
+        $opcional["queijo","cebola","Azeitona"]
+
+    radio: a ideia é que somente uma opção seja selecionada, ou seja, não possui multiplos valores. também identificada através do atributo name=""
+
+    adicional: informação sobre o atributo disabled
+        é um atributo que deixa um certo atributo desabilitado. (o mesmo aparece porém, não é possível seleciona-lo)
+    -->
+    <form method="get">
+        <h1>Pizzaria só na Bordinha</h1>
+        <h3>Você selecionou: pizza calabresa:</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional" value="Calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional" value="cebola" disabled> + cebola <br>
+        <input type="checkbox" name="opcional" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim <br>
+        <input type="radio" name="borda" value="nao">Não <br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante <br>
+        <input type="radio" name="bebida" value="agua">Água <br>
+        <input type="radio" name="bebida" value="Nenhum">Nenhum <br><br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+    
+</body>
+</html>

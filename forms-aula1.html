@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+
+    <!--atributos do formulario:
+    o name: no foms identifica as informações no formulário. para validar no JS
+
+    action: é para onde vai as informações após clicar enviar(pode infligir uma regra que saberemos depois.)
+
+    method: temos dois tipos:
+        GET: envia todas as informações por URL
+        POST: capsula e envia através do corpo da requisição e não aparecerá na URL
+
+    target: assim como no atributo na tag <a> do html serve para definir se será enviado na mesma página ou iniciará uma nova aba.
+
+    autocomplete: para o navegado perguntar se deseja ou não salvar os dados para uma acesso futuro.
+
+    onalgumacoisa: no html tudo que é on significa que são eventos.
+        onsubmit: quando clicar no botão o que será realizado, atraves de um código JS
+    -->
+    <form name="signup" method="POST" action="#" autocomplete="off" onsubmit="alert('Formulário não enviado')">
+        Nome: <input type="text" name="name">
+        Idade: <input type="number" name="age" id="">
+        Senha: <input type="password" name="password" id="">
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

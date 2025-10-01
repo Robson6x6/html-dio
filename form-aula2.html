@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastros</title>
+</head>
+<body>
+    <form action="">
+        <!--tipos de tag de formulário:
+
+        text: destinado para textos, pode-se inseris caracteres, números, caracteres especiais, etc...
+
+        number: exclusico para números podemos atribuir algumas coisas para esse campo
+         min="0" defini um número minímo para iniciar o valor.
+         max="99" defini o valor maxímo no qual não pode ultrapassar
+         step="5" defini o valor que será acrescentado ou diminuido ao clicar nas setas. (nesse exemplo de 5 em 5)
+
+        button: existem dois tipes:
+            <input type="button" value:"Enviar"
+            <button>Enviar</button>
+            para o navegador eles fazem a mesma coisa, porém semanticamente melhora o button exemplo:
+            na tag <button> podemos escolher o type="":
+                button: um botão normal;
+                menu: abri um subselect;
+                reset: irá resetar o formulário;
+                submit: irá enviar.
+
+        Semanticamente falando o button atende melhor.
+
+        Range: pode-se definir um valor min e um máximo e escolher esse valor apenas deslizando na barra, também é possível escolher o valor de inicio o atributo value
+
+        color: exibe uma caixa de cores no navegador onde pode-se selecionar uma cor.
+
+        email: tem um problema com a compatibilidade, pois podemos implementar nossas restrições
+
+        date: para datas.
+
+        week: usado para definir a semana do ano
+        (em alguns navegadores não funciona)
+
+        month: definir um mês no ano
+        
+        checkbox: usado para valores booleanos (verdaeiro ou false, true/false), pode-se ser selecionado mais de um.
+
+        radio: é possivel definir que é somente um opção definindo o atributo name="nome"
+
+        hidden: é um campo que fica invísivel para o navegador(usuário) mas por trás ele é enviando ao clicar para enviar. as vezes é necessário utilizar esse recurso
+
+        file: utilizado para enviar arquivos, utilizando o atributo multiple é possível selecionar vários arquivos, caso não defina só será possível selecionar um.
+
+        search: só funciona em alguns navegadores.
+         
+        -->
+        <label for="">Text: </label><input type="text"><br>
+        <label for="">Number: </label><input type="number" min="0" max="10" step="5"><br>
+        <label for="">Range: </label><input type="range" min="0" max="100" value="10"><br>
+        <label for="">Color: </label><input type="color"><br>
+        <label for="">e-mail: </label><input type="email" type="submit"><br>
+        <label for=":">URL: </label><input type="url"><br>
+        <label for="">Date: </label><input type="date"><br>
+        <label for="">Week: </label><input type="week"><br>
+        <label for="">Month: </label><input type="month"><br>
+        <label for="">checkbox </label><input type="checkbox" name="" id=""><input type="checkbox" name="aceita" id=""><br>
+        <label for="">Radio: </label><input type="radio" name="aceita?"><input type="radio" name="aceita?"><br>
+        <label for="">Hidden: </label><input type="hidden" name="" id=""><br>
+        <label for="">File: </label><input type="file"><br>
+        <label for="">Search</label><input type="search"><br>
+        
+
+
+
+        <label for="">button: </label><input type="button" value="Enviar">
+        
+    </form>
+    
+</body>
+</html>
